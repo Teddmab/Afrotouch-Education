@@ -1,0 +1,28 @@
+.main-content {
+    text-align: center;
+    margin: 20px;
+}
+
+
+  
+  /* .inspiring-image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Or use flexbox/grid for layout /
+    margin: 0 auto; /* This centers the image in its container /
+*/
+
+.inspiring-image-container {
+    /* width: 100%; Adjust the width as necessary */
+    max-width: 900px;
+    /* height: 100vh; Use viewport height to control the displayed portion */
+    overflow: hidden; /* Hide the parts of the image that are outside this container */
+    margin: auto;
+}
+
+.inspiring-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* This will cover the area of the container without stretching the image */
+}
+

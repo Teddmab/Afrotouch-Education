@@ -1,0 +1,174 @@
+@media (max-width: 768px) {
+    .main-content form input,
+    .main-content form button {
+        width: 90%;
+        margin: 10px 0; /* Stack inputs vertically */
+    }
+}
+
+.header-content {
+    position: relative; /* For absolute positioning of form-container */
+    text-align: center;
+}
+
+.toggle-form {
+    cursor: pointer;
+}
+
+.form-container {
+    /* position: absolute; */
+    top: 100%; /* Position right below the header */
+    left: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Additional styling for your form container (background, padding, etc.) */
+    /* z-index: 10; Ensure it's above other content */
+    /* display: none; Start with form not displayed */
+}
+
+.form-container.active {
+    display: block; /* Display the form */
+    opacity: 1;
+    transform: scaleY(1); /* Animate in */
+}
+
+/* Make sure the rest of your styles are correctly scoped to avoid conflicts */
+@media (max-width: 768px) {
+    .header-content form input,
+    .header-content form button {
+        width: 90%;
+        margin: 10px auto; /* Centered with auto margins */
+    }
+}
+
+.form-container input, select {
+    margin: 10px;
+    padding: 8px;
+}
+
+.form-container button {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.privacy-message {
+    font-size: 0.8rem;
+    margin-top: 15px;
+    color: #666;
+}
+
+.checkbox_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.checkbox_container {
+    /* margin-bottom: 10px; */
+    width: 40%;
+}
+
+.checkbox_container label {
+    margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkbox_container :checked {
+        /* width: 100%; Take full width to accommodate smaller screens */
+        
+    }
+    .checkbox_container div {
+      /* You might want to adjust the margin or font-size for smaller screens */
+    }
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo horizontally */
+    padding: 10px;
+  }
+  
+  .logo {
+    max-width: 100px; /* Control the logo size here */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive styles for the logo when the viewport width is 768px or less */
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 50px; /* Reduce the size on smaller screens if necessary */
+    }
+  }
+
+
+
+/* Assuming your navigation is wrapped in a <nav> tag with a class of 'navbar' */
+
+.navbar {
+    background-color: #1c1c1e; /* Dark background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding to your preference */
+}
+
+.navbar a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* No underlines on links */
+    font-size: 1rem; /* Set font size */
+    font-weight: bold; /* Bold font weight */
+    margin: 0 15px; /* Spacing between links */
+    position: relative;
+    padding: 5px 10px; /* Padding inside links for larger click area */
+    border-radius: 4px; /* Slight rounding on link blocks */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    background-color: #ffffff; /* Background color on hover/focus */
+    color: #1c1c1e; /* Text color on hover/focus */
+    border-radius: 20px; /* Rounded pill shape on hover/focus */
+}
+
+  /* If you have an active class for the current page */
+.navbar a.active {
+    background-color: #4b8bec; /* Light blue background for active link */
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+  /* User profile icon styles */
+.navbar .profile-icon {
+    background-color: #ffffff; /* White background for the profile icon */
+    color: #1c1c1e; /* Dark text color for the profile icon */
+    border-radius: 50%; /* Circular shape for the profile icon */
+    padding: 10px; /* Padding for the icon */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Push the profile icon to the right */
+}
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+
+    .navbar a {
+      margin: 5px 0; /* Smaller margin for stacked layout */
+    }
+}

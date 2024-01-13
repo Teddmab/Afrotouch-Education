@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .main-content form input,
+    .main-content form button {
+      width: 90%;
+      margin: 10px 0; /* Stack inputs vertically */
+    }
+  }
+  

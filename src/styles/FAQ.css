@@ -1,0 +1,73 @@
+/* FAQ.css */
+
+.faq-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Use a web-safe font or specify your custom font */
+  }
+  
+  .faq-page h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .faq-section {
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .faq-article {
+    margin-bottom: 20px;
+  }
+  
+  .faq-article h3 {
+    color: #0056b3; /* Adjust the color to fit your theme */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq-article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .back-to-main {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #0056b3;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0056b3; /* A border makes it look like a button */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .back-to-main:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none; /* No underline on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .faq-page {
+      padding: 10px;
+    }
+  
+    .faq-page h1 {
+      font-size: 2rem; /* Slightly smaller font size for smaller screens */
+    }
+  
+    .faq-article h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

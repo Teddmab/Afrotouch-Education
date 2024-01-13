@@ -1,0 +1,31 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Fixed size for icons */
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9e9e9; /* Light background for the icons */
+    color: #333; /* Color for the svg icons */
+    text-decoration: none; /* Remove underline from anchors */
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    background-color: #d0d0d0; /* Darker background on hover/focus */
+}
+
+/* Style the SVG icons with a class if needed */
+.social-links svg {
+    width: 24px; /* Size of icons */
+    height: 24px;
+    fill: currentColor; /* Use the text color for the SVG icon */
+}
